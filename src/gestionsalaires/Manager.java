@@ -11,7 +11,7 @@ package gestionsalaires;
 public class Manager extends Employe {
    
     public Manager(String nom, String prenom, int anciennete) {
-       super(nom,prenom,anciennete,"developpeur");
+       super(nom,prenom,anciennete,"Manager");
     }
     
     public int getSalaire(){
