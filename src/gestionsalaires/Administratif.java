@@ -13,7 +13,7 @@ package gestionsalaires;
     public Administratif(String nom, String prenom, int anciennete) {
         super(nom, prenom, anciennete, "administratif");
     }
- public int getSalaire(){
+ public double getSalaire(){
         return (1900+anciennete*100);
     }
  }

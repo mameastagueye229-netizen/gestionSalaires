@@ -20,12 +20,15 @@ public class GestionSalaires {
         Administratif a= new Administratif("Martin", "Claire", 3);
         Developpeur devJava = new Developpeur("Emma", "Baron", 2, "java");
         Developpeur devPython = new Developpeur("Mame asta", "Gueye", 1, "python");
+        DeveloppeurExpert devex = new DeveloppeurExpert("Mame asta", "Gueye", 1, "python");
+
         
         System.out.println(d.getDescription());
         System.out.println(m.getDescription());
         System.out.println(a.getDescription());
         System.out.println (devJava.getDescription());
         System.out.println(devPython.getDescription());
+        System.out.println(devex.getDescription());
 
     }
     

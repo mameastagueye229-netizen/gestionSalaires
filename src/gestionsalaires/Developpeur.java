@@ -17,7 +17,7 @@ public class Developpeur extends Employe {
     }
      
     @Override
-    public int getSalaire(){
+    public double getSalaire(){
        int salaireB=2200+anciennete*110;
        if(langage.equals("java")){
            return salaireB + 50;

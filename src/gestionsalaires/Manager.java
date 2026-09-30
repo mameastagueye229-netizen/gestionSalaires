@@ -14,7 +14,8 @@ public class Manager extends Employe {
        super(nom,prenom,anciennete,"Manager");
     }
     
-    public int getSalaire(){
+    @Override
+    public double getSalaire(){
         return (2200+anciennete*110);
     }
     
