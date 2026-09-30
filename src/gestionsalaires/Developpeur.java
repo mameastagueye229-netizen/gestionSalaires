@@ -9,13 +9,33 @@ package gestionsalaires;
  * @author maxim
  */
 public class Developpeur extends Employe {
- 
-    public Developpeur(String nom, String prenom, int anciennete) {
-        super(nom,prenom,anciennete,"developpeur");
-    }
+    private String langage;
     
-    public int getSalaire(){
-        return (1900+anciennete*100);
+    public Developpeur(String nom, String prenom, int anciennete,String langage) {
+        super(nom,prenom,anciennete,"developpeur");
+        this.langage=langage;
     }
-   
+     
+    @Override
+    public int getSalaire(){
+       int salaireB=2200+anciennete*110;
+       if(langage.equals("java")){
+           return salaireB + 50;
+       }
+       if(langage.equals("python")){
+           return salaireB + 70;
+       }
+       if(langage.equals("php")){
+          
+       }
+       
+return salaireB;
+    }
+    @Override
+    public String getDescription() {
+        return super.getDescription() + " en " + langage;
+    }
 }
+
+  
+
